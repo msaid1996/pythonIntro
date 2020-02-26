@@ -3,7 +3,9 @@
 #only min<max, if not change
 #max limit of 50, if not change
 
-def fizzbuzz(x,y):
+def fizzbuzz():
+    x = input("What is your start number?")
+    y = input("What is your end number?")
     while x.isdigit() is False or y.isdigit() is False:
         print("Sorry, please insert a number")
         x = input("What is your start number?")
@@ -41,9 +43,5 @@ def fizzbuzz(x,y):
                     else:
                         print(num)
 
-    return y
-
-x = input("What is your start number?")
-y = input("What is your end number?")
-print(fizzbuzz(x,y))
+fizzbuzz()
 
