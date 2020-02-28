@@ -109,21 +109,28 @@ class Animal:
 
 
 class Reptile(Animal):                          # INHERITANCE HERE! --> put class 'Animal' to this class 'Reptile' = reptile is inherited from animal
-    def __init__(self):
+    def __init__(self):                         #gain access to ALL METHODS IN *parent* class - can use: init ALIVE, BREATHER, MOVES
         super().__init__()
 
-    def cold(self):
+    def cold(self):                             #own unique method/function
         print("I'm cold blooded")
 
 #assign
+print("**************Parent child:")
+
 jean = Animal()         #jean is an animal
 print(jean.alive)
 print(jean.breathe())
 
+print("**************Class child:")
+
+
 ali = Reptile()         #Ali is a reptile
-print(ali.cold())
-print(ali.alive)
+print(ali.cold())       #from CHILD
+print(ali.alive)        #from PARENT ******************
+print(ali.breathe())    #from PARENT ******************
+print(ali.moves())      #from PARENT ******************
 
 print("3. Encapsulation e.g.")
-ali.
+
 
