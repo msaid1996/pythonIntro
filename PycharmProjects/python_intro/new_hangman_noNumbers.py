@@ -2,8 +2,6 @@ import hangman_word
 import random
 
 #################################### UPDATED HANGMAN VERSION!!!!! #########################
-# selected_word = random.choice(hangman_word.word_list)
-# print(selected_word)
 
 class Word():
     def __init__(self, randomWord, lifeCounter, dash):
@@ -26,7 +24,7 @@ class Word():
                 if capAsk not in randomWord:
                     not_used_list.append(capAsk)                                                #add input letter into new list "list of wrong words"
                     not_used_list = list(dict.fromkeys(not_used_list))                          # removes repeated letters
-                    print("Incorrect letters are: ")
+                    print("Incorrect letters used are: ")
                     print(not_used_list)                                                        # print the list of wrong letters each loop
                     lifeCounter += 1                                                            #1 life is removed
                     print("Life remaining: " + str(10-lifeCounter))
@@ -41,7 +39,7 @@ class Word():
                         wordList.append(index)
                     #print(wordList)                                                           #prints the wordlist with each letter in random word as '' = ['','','','']
 
-                    #compare dashlist and random word list -->then insert the write index into dash/dashlist
+                    #compare dashlist and random word list -->then insert the letter w. the right index into dash/dashlist
                     for x, elem in enumerate(wordList):
                         if elem == capAsk:
                             dash[x] = capAsk
@@ -50,6 +48,8 @@ class Word():
 
                     if dash == wordList and lifeCounter != 10:                                 #you win if wordlist and dashlist match & life x reach 10
                         print("CONGRATULATIONS, YOU WIN!")
+                        lifeCounter = 10                                                       #end the game
+                        return ("Game Over, YOU WIN!")
             else:
                 print("Please insert only 1 alphabetical letter")                               #after this goes back to top loop
 
