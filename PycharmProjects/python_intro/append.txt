@@ -1,0 +1,28 @@
+hello 
+This is our new write file text 
+Another line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 
+hello 
+This is our new APPEND MODE NEW INFO ADDED TO file text 
+Another APPEND NEW INFO line 
+And another line 

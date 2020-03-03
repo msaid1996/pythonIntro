@@ -1,0 +1,4 @@
+hello 
+This is our new write file text 
+Another line 
+And another line 
